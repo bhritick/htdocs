@@ -1,0 +1,42 @@
+<head></head>
+
+<body>
+    <form action="">
+        <input type="number" name="" id="no1"><br>
+        <input type="number" name="" id="no2"><br>
+        <input type="button" value="add" id="btn" onclick="addFun()">
+        <h1 id="total"></h1>
+    </form>
+    <form action="">
+        <p>Please select your age:</p>
+        <input type="radio" id="age1" name="age" value="30">
+        <label for="age1">0 - 30</label><br>
+        <input type="radio" id="age2" name="age" value="60">
+        <label for="age2">31 - 60</label><br>
+        <input type="radio" id="age3" name="age" value="100">
+        <label for="age3">61 - 100</label><br><br>
+        <input type="button" value="Submit" onclick="addDisp()">
+        <h1 id="disp"></h1>
+    </form>
+    <script>
+        function addFun() {
+            const x = parseInt(document.getElementById('no1').value);
+            const y = parseInt(document.getElementById('no2').value);
+            const z = x + y;
+            document.getElementById('total').innerHTML = z;
+        }
+
+        function addDisp() {
+            const a = document.getElementById('age1').checked;
+            const b = document.getElementById('age2').checked;
+            const c = document.getElementById('age3').checked;
+
+            // document.getElementById('disp').innerHTML = a;
+            if (a == 'true') {
+                document.getElementById('disp').innerHTML = "CHECKED";
+            } else {
+                document.getElementById('disp').innerHTML = "uNCHECKED";
+            }
+        }
+    </script>
+</body>

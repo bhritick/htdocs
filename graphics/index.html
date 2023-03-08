@@ -1,0 +1,359 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        #hero {
+            background-image: url(https://images.pexels.com/photos/356043/pexels-photo-356043.jpeg?auto=compress&cs=tinysrgb&w=1600);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #text {
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #hero div.container {
+            padding: 150px 0px;
+        }
+        
+        #queen {
+            background-image: url(https://images.pexels.com/photos/5738735/pexels-photo-5738735.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #queen div.container {
+            padding: 150px 0px;
+        }
+        
+        #her {
+            background-color: #bbb;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        #her div.container {
+            padding: 100px 0px;
+        }
+        
+        #him {
+            background-color: rgb(16, 205, 238);
+            background-position: center;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-family: "Sofia", sans-serif;
+            color: #131414 !important;
+        }
+        
+        #hero2 {
+            background-color: rgb(21, 21, 22);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #him1 {
+            background-color: rgb(16, 131, 238);
+        }
+        
+        #header-video {
+            background-size: cover;
+        }
+        
+        #hero div.container {
+            padding: 150px 0px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        
+        .flip-card-back {
+            background-color: rgb(109, 235, 197);
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    >
+    <section id="hero">
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-expand-lg mb-5" id="her">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://img.freepik.com/free-vector/law-office_497289-40.jpg?w=740" alt="" width="30" height="24">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="row">
+                <div class="row ">
+                    <div class="col-12 my-5 ">
+                        <div class="text-center ">
+                            <h2 class="display-4 text-white">Graphics with us</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                        </div>
+                        <div class="carousel-">
+                            <div class="carousel-item carousel-item-next carousel-item-start">
+                                <h4 class="display-5">Do you have a great idea? Let's create it together</h4>
+                                <h4 class="lead my-4">No matter what your budget or project, we make it easy to get started. You'll work directly with an experienced web designer who will listen to you and help bring your idea to life on the Web.</h4>
+                            </div>
+                            <div class="carousel-item">
+                                <h4 class="display-5 text-dark">Give your business a boost with a new website</h4>
+                                <h4 class="lead my-4 text-dark">With years of experience and with the latest design software, we are confident that we can provide you with a high-quality website.
+
+                                </h4>
+                            </div>
+                            <div class="carousel-item active carousel-item-start">
+                                <h4 class="display-5 text-dark">We create Graphic designs that make you Grow</h4>
+                                <h4 class="lead my-4 text-dark">No matter what your budget or project, we make it easy to get started. You'll work directly with an experienced web designer who will listen to you and help bring your idea to life on the Web.
+                                </h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-12">
+                    <img src="img3.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wave-bg2 ">
+        <div class="container">
+            <div class="row">
+                <h4 class="display-5 text-center mb-5">Our best Features</h4>
+                <div class="col-lg-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img4.jpeg" alt="Avatar" style="width:400px;height:300px;">
+                            </div>
+                            <div class="flip-card-back py-5">
+                                <h2>Custom Apparel
+                                </h2>
+                                <h4 class="lead my-4 text-dark">We make everything user friendly so you can focus on growing your business.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img5.webp" alt="Avatar" style="width:400px;height:300px;">
+                            </div>
+                            <div class="flip-card-back py-5">
+                                <h2>Custom Signs and Banners
+                                </h2>
+                                <h4 class="lead my-4 text-dark">We create transparent workflow. As a result, we help you understand your files, with simplicity.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img7.jpeg" alt="Avatar" style="width:400px;height:300px;">
+                            </div>
+                            <div class="flip-card-back py-5">
+                                <h2> Custom Vehicle Graphics and Wraps
+                                </h2>
+                                <h4 class="lead my-4 text-dark">Our friendly and knowledgeable staff are available 24×7 to answer your questions.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5 ">
+            <div class="row">
+                <div class="col-md-6 col-12 my-5 p">
+                    <h4 class="display-5">We have a creative team built your Business</h4>
+                    <p class="lead my-4">we are a creative team that helps small and large business tell their story to the world. We aim to create something that is authentic and can be found nowhere else! We can help you: – Design awesome website – Make your Business online
+                        and build strong online presence</p>
+                    <a class="btn btn-primary my-2 py-2 px-4 border-0" href="tel:919433815504" role="button" id="her">
+                        <span class="px-2">learn more</span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-12">
+                    <img src="https://png.pngtree.com/background/20210709/original/pngtree-texture-geometric-black-background-picture-image_930090.jpg" alt="">
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mt-5">
+                                <div class="card shadow rounded-0 border-0 my-5 p-3">
+                                    <div class="card-body">
+                                        <i class="bi bi-laptop "></i>
+                                        <h3 class="lead text-center fs-4">Web Design</h3>
+                                        <p class="lead text-justify fs-6">We develop dynamic websites that help you connect with your customers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="card shadow rounded-0 border-0 my-5 p-3">
+                                    <div class="card-body">
+                                        <h3 class="lead text-center fs-4">Software Development</h3>
+                                        <p class="lead text-justify fs-6">We will help you develop the best solution to your problem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-5 col-12 my-5">
+                    <h4 class="display-5">Secure your domain today.</h4>
+                    <p class="lead my-4">Don’t miss out on the most effective way to get your unique domain name and hosting package. We make it simple to find a domain that makes sense for you</p>
+                    <a class="btn btn-primary my-2 py-2 px-4 border-0" href="tel:919433815504" role="button" id="her">
+                        <span class="px-2">learn more</span>
+                    </a>
+                </div>
+    </section>
+    <section class="wave-bg2 ">
+        <div class="container">
+            <div class="row">
+                <h4 class="display-5 text-center mb-5">Our Latest Portfolio</h4>
+
+            </div>
+        </div>
+    </section>
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="text-center ">
+                            <h2 class="display-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <p class="text-center text-white pt-3 ">All Rights Reserved © 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center my-5">JS Addition</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12"></div>
+                <div class="col-lg-4 col-12">
+                    <!-- <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">No 1</label>
+                            <input type="number" class="form-control" id="no1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">No 2</label>
+                            <input type="number" class="form-control" id="no2">
+                        </div>
+                        <p id="mytotal"></p>
+                        <button type="button" class="btn btn-primary" onclick="mySum();">Submit</button>
+                    </form> -->
+                    <!-- <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">No 1</label>
+                            <input type="text" class="form-control" id="no1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">No 2</label>
+                            <input type="text" class="form-control" id="no2">
+                        </div>
+                        <p id="mytotal"></p>
+                        <button type="button" class="btn btn-primary" onclick="myTxt();">Submit</button>
+                    </form> -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Age</label>
+                            <input type="number" min="0" max="90" class="form-control" id="no1" onchange="ageValid()">
+                        </div>
+
+                        <p id="mytotal"></p>
+                        <button type="button" class="btn btn-primary" onclick="myAge();">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-12"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // function mySum() {
+        //     var a, b, sum;
+
+        //     a = parseInt(document.getElementById("no1").value);
+        //     b = parseInt(document.getElementById("no2").value);
+        //     sum = a + b;
+        //     document.getElementById("mytotal").innerHTML = sum;
+        // }
+
+        // function myTxt() {
+        //     var a, b, sum;
+
+        //     a = document.getElementById("no1").value;
+        //     b = document.getElementById("no2").value;
+        //     sum = a + b;
+        //     document.getElementById("mytotal").innerHTML = a.concat(b);
+        // }
+
+
+
+        function myAge() {
+            var a, myage;
+            a = parseInt(document.getElementById("no1").value);
+            if (a >= 0 && a < 6) {
+                document.getElementById("mytotal").innerHTML = "Kid";
+            } else if (a > 5 && a < 12) {
+                document.getElementById("mytotal").innerHTML = "Children";
+            } else if (a > 12 && a < 18) {
+                document.getElementById("mytotal").innerHTML = "Teen";
+            } else if (a > 18 && a < 60) {
+                document.getElementById("mytotal").innerHTML = "Adult";
+            } else {
+                document.getElementById("mytotal").innerHTML = "Oldy";
+            }
+            document.getElementById("mytotal").innerHTML = a.concat(a);
+        }
+
+        function ageValid() {
+            var a;
+            a = parseInt(document.getElementById("no1").value);
+            if (a < 0 || a > 90) {
+                alert("Need to put the between 0-90");
+            }
+        }
+    </script>
+</body>
+
+</html>
